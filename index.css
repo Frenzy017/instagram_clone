@@ -1,5 +1,110 @@
 html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 0;
     padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+header {
+    padding: 10px;
+    width: 375px;
+    height: 67px;
+    border-bottom: 1px solid grey;
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+    
+}
+
+.location {
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container-post {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 8px;
+}
+
+.logo {
+    width: 127px;
+    height: 50px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+main {
+    width: 375px;
+    height: 545px;
+}
+
+.block {
+    line-height: 3px;
+   
+}
+
+.post-media {
+    margin: 0;
+    padding: 0;
+}
+
+.post-image {
+    height: 375px;
+    width: 375px;
+}
+
+.post-reactions {
+    display: flex;
+    padding: 12px 0px;
+}
+
+.post-meta {
+    margin: 0;
+    padding: 0;
+}
+
+.likes {
+    margin: 0;
+    padding: 0;
+}
+
+.post-caption {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-icon:hover {
+    opacity: 0.60;
 }
 
