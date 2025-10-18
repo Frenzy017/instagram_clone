@@ -1,9 +1,70 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <img src="images/logo.png">
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="index.js"></script>
+
+    <header>
+      <div class="container">
+        <img class="logo" src="images/logo.png" alt="Oldgram logo" />
+        <img
+          class="avatar"
+          src="images/user-avatar.png"
+          alt="Current user avatar"
+        />
+      </div>
+    </header>
+
+    <main>
+      <article class="post" aria-labelledby="post-author">
+        <div class="container-post">
+          <img
+            class="avatar"
+            src="images/avatar-vangogh.jpg"
+            alt="Avatar of Vincent van Gogh in gradient red and blue background"
+          />
+          <div class="block">
+            <h2>Vincent van Gogh</h2>
+            <p class="location">Zudert, Netherlands</p>
+          </div>
+        </div>
+
+        <figure class="post-media">
+          <img
+            class="post-image"
+            src="images/post-vangogh.jpg"
+            alt="Self‑portrait painting posted by Vincent van Gogh"
+          />
+        </figure>
+
+        <div class="post-reactions" aria-label="Post reactions">
+          <button type="button" class="btn-icon btn-like" aria-label="btn-like">
+            <img src="images/icon-heart.png" alt="heart">
+          </button>
+          <button type="button" class="btn-icon btn-comment" aria-label="btn-comment">
+            <img src="images/icon-comment.png" alt="comment">
+          </button>
+          <button type="button" class="btn-icon btn-send" aria-label="btn-comment">
+            <img src="images/icon-dm.png" alt="send">
+          </button>
+        </div>
+
+        <section class="post-meta" aria-label="Engagement">
+          <p class="likes"><strong>21,492</strong> likes</p>
+        </section>
+
+        <section class="post-caption" aria-label="Caption">
+          <h3 class="username">vincent</h3>
+          <p class="user-comment">I just ate some mushrooms lol</p>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>
