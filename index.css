@@ -20,6 +20,11 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    display: flex;
+    align-self: flex-start;
+}
+
 img {
     width: 24px;
     height: 24px;
@@ -76,7 +81,10 @@ main {
 
 .post-reactions {
     display: flex;
-    padding: 12px 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -5px;
+    padding-top: 5px;
 }
 
 .post-meta {
@@ -86,17 +94,19 @@ main {
 
 .likes {
     margin: 0;
-    padding: 0;
+    padding-top: 5px;
 }
 
 .post-caption {
     display: flex;
+    flex: 1;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
     margin: 0;
     padding: 0;
 }
+
 
 .btn-icon {
     background: none;
